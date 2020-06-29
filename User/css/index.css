@@ -1,0 +1,60 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/sea.jpg);
+    background-size: 100% 100%;
+}
+h1{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 50px;
+    font-style: italic;
+}
+table{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    text-align: center;
+    box-shadow: 0 0 10px;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+table tr td,th{
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid black;
+}
+table thead tr{
+    background-color: rgba(50, 13, 214, 0.6);
+}
+table tbody tr:nth-child(2n){
+    background-color: rgba(12, 96, 175, 0.6);
+}
+table tbody tr:nth-child(2n+1){
+    background-color: rgba(48, 105, 131, .6);
+}
+table tbody tr:last-child td{
+    height: 60px;
+    border: none;
+    border-top: 1px solid white;
+}
+table tbody tr th,td:last-child {
+    width: 160px;
+}
+table tbody tr .op{
+    margin: auto 5px;
+    font-size: 14px;
+    width: 60px;
+    height: 30px;
+}
+table tbody tr a{
+    margin: auto 60px;
+    font-size: 14px;
+    width: 60px;
+    height: 30px;
+}
